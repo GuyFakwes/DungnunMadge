@@ -10,13 +10,19 @@ if(global.gameispaused > 1){	/// @DnDAction : YoYo Games.Common.Exit_Event
 	/// @DnDParent : 64216F22
 	exit;}
 
+/// @DnDAction : YoYo Games.Movement.Wrap_Room
+/// @DnDVersion : 1
+/// @DnDHash : 68EF5749
+/// @DnDArgument : "margin" "20"
+move_wrap(1, 1, 20);
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 75BBB80C
 /// @DnDArgument : "var" "playermana"
 /// @DnDArgument : "op" "3"
-/// @DnDArgument : "value" "5"
-if(playermana <= 5){	/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDArgument : "value" "10"
+if(playermana <= 10){	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 284CAB84
 	/// @DnDParent : 75BBB80C
@@ -57,8 +63,8 @@ if(playermana <= 5){	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDHash : 7DAF2A24
 /// @DnDArgument : "var" "playermana"
 /// @DnDArgument : "op" "2"
-/// @DnDArgument : "value" "5"
-if(playermana > 5){	/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDArgument : "value" "10"
+if(playermana > 10){	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 0FD9AA8E
 	/// @DnDParent : 7DAF2A24
@@ -112,8 +118,8 @@ if(playermana > 20){	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDParent : 1DAD10F7
 	/// @DnDArgument : "var" "playermana"
 	/// @DnDArgument : "op" "1"
-	/// @DnDArgument : "value" "50"
-	if(playermana < 50){	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDArgument : "value" "40"
+	if(playermana < 40){	/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 611C1BF7
 		/// @DnDParent : 1C155D06
@@ -153,8 +159,8 @@ if(playermana > 20){	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDHash : 52757FC5
 /// @DnDArgument : "var" "playermana"
 /// @DnDArgument : "op" "2"
-/// @DnDArgument : "value" "50"
-if(playermana > 50){	/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDArgument : "value" "40"
+if(playermana > 40){	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 1DA48969
 	/// @DnDParent : 52757FC5

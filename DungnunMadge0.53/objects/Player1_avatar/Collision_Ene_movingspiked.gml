@@ -33,4 +33,5 @@ else{	/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
 	/// @DnDHash : 1B3C8FCB
 	/// @DnDParent : 024EFDBE
 	/// @DnDArgument : "lives" "lives-1"
-	__dnd_lives = real(lives-1);}
+	/// @DnDArgument : "lives_relative" "1"
+	if(!variable_instance_exists(id, "__dnd_lives")) __dnd_lives = 0;__dnd_lives += real(lives-1);}
