@@ -70,6 +70,9 @@
     "name":"BlueGlowMageFull",
     "path":"sprites/BlueGlowMageFull/BlueGlowMageFull.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Magecollision",
+    "path":"sprites/Magecollision/Magecollision.yy",
+  },
   "visible":true,
 }

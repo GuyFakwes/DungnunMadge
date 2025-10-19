@@ -13,8 +13,8 @@ if(global.gameispaused > 1){	/// @DnDAction : YoYo Games.Common.Exit_Event
 /// @DnDAction : YoYo Games.Movement.Wrap_Room
 /// @DnDVersion : 1
 /// @DnDHash : 68EF5749
-/// @DnDArgument : "margin" "20"
-move_wrap(1, 1, 20);
+/// @DnDArgument : "margin" "5"
+move_wrap(1, 1, 5);
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
