@@ -66,6 +66,31 @@ global.xplayer += 0;
 /// @DnDArgument : "var" "global.yplayer"
 global.yplayer += 0;
 
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 05E41064
+/// @DnDArgument : "var" "global.playerlives_assigned"
+/// @DnDArgument : "not" "1"
+/// @DnDArgument : "value" "1"
+if(!(global.playerlives_assigned == 1)){	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+	/// @DnDVersion : 1
+	/// @DnDHash : 3F86B5C8
+	/// @DnDParent : 05E41064
+	/// @DnDArgument : "msg" ""Forced Players lives""
+	show_debug_message(string("Forced Players lives"));
+
+	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDVersion : 1
+	/// @DnDHash : 5C008BE9
+	/// @DnDInput : 2
+	/// @DnDParent : 05E41064
+	/// @DnDArgument : "value" "3"
+	/// @DnDArgument : "value_1" "1"
+	/// @DnDArgument : "var" "global.player_Lives"
+	/// @DnDArgument : "var_1" "global.playerlives_assigned"
+	global.player_Lives = 3;
+	global.playerlives_assigned = 1;}
+
 /// @DnDAction : YoYo Games.Rooms.Get_Current_Room
 /// @DnDVersion : 1
 /// @DnDHash : 0DB19D43
@@ -73,17 +98,29 @@ global.yplayer += 0;
 /// @DnDArgument : "var_temp" "1"
 var isroomnumber = room;
 
+/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+/// @DnDVersion : 1
+/// @DnDHash : 505AEC48
+/// @DnDInput : 2
+/// @DnDArgument : "msg" ""Room Number is ""
+/// @DnDArgument : "msg_1" "isroomnumber"
+show_debug_message(string("Room Number is ") + @"
+" + string(isroomnumber));
+
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
 /// @DnDHash : 03D5919D
 /// @DnDArgument : "var" "isroomnumber"
-/// @DnDArgument : "value" "1"
-if(isroomnumber == 1){	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+/// @DnDArgument : "value" "Room001"
+if(isroomnumber == Room001){	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 	/// @DnDVersion : 1
 	/// @DnDHash : 30F50D7F
+	/// @DnDInput : 2
 	/// @DnDParent : 03D5919D
-	/// @DnDArgument : "msg" "isroomnumber"
-	show_debug_message(string(isroomnumber));
+	/// @DnDArgument : "msg" ""Room Number is ""
+	/// @DnDArgument : "msg_1" "isroomnumber"
+	show_debug_message(string("Room Number is ") + @"
+	" + string(isroomnumber));
 
 	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDVersion : 1
@@ -91,7 +128,17 @@ if(isroomnumber == 1){	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Me
 	/// @DnDParent : 03D5919D
 	/// @DnDArgument : "value" "3"
 	/// @DnDArgument : "var" "global.player_Lives"
-	global.player_Lives = 3;}
+	global.player_Lives = 3;
+
+	/// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
+	/// @DnDVersion : 1
+	/// @DnDHash : 4FDBD940
+	/// @DnDInput : 2
+	/// @DnDParent : 03D5919D
+	/// @DnDArgument : "msg" ""Set Lives to  ""
+	/// @DnDArgument : "msg_1" "global.player_Lives"
+	show_debug_message(string("Set Lives to  ") + @"
+	" + string(global.player_Lives));}
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1

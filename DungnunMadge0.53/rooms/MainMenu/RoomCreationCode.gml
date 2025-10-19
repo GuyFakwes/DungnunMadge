@@ -1,9 +1,15 @@
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 28C544E5
+/// @DnDInput : 3
 /// @DnDArgument : "value" "1"
+/// @DnDArgument : "value_2" "3"
 /// @DnDArgument : "var" "global.Currentlevel"
+/// @DnDArgument : "var_1" "global.playerlives_assigned"
+/// @DnDArgument : "var_2" "global.player_Lives"
 global.Currentlevel = 1;
+global.playerlives_assigned = 0;
+global.player_Lives = 3;
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
@@ -22,35 +28,6 @@ var l693E8293_0 = false;l693E8293_0 = instance_exists(Player1_avatar);if(l693E
 	/// @DnDApplyTo : {Player1_avatar}
 	/// @DnDParent : 693E8293
 	with(Player1_avatar) instance_destroy();}
-
-/// @DnDAction : YoYo Games.Files.If_File_Exists
-/// @DnDVersion : 1
-/// @DnDHash : 63D89F82
-/// @DnDArgument : "file" ""save01.ini""
-/// @DnDArgument : "not" "1"
-var l63D89F82_0 = file_exists("save01.ini");if(!l63D89F82_0){	/// @DnDAction : YoYo Games.Files.Open_Ini
-	/// @DnDVersion : 1
-	/// @DnDHash : 1B6A0325
-	/// @DnDParent : 63D89F82
-	/// @DnDArgument : "filename" ""save01.ini""
-	ini_open("save01.ini");
-
-	/// @DnDAction : YoYo Games.Files.Ini_Read
-	/// @DnDVersion : 1
-	/// @DnDHash : 166710EC
-	/// @DnDParent : 63D89F82
-	/// @DnDArgument : "var" "global.player_points"
-	/// @DnDArgument : "type" "1"
-	/// @DnDArgument : "section" ""inventory""
-	/// @DnDArgument : "key" ""tokens""
-	/// @DnDArgument : "default" "0"
-	global.player_points = ini_read_real("inventory", "tokens", 0);
-
-	/// @DnDAction : YoYo Games.Files.Close_Ini
-	/// @DnDVersion : 1
-	/// @DnDHash : 36BA9A5A
-	/// @DnDParent : 63D89F82
-	ini_close();}
 
 /// @DnDAction : YoYo Games.Files.Open_Ini
 /// @DnDVersion : 1

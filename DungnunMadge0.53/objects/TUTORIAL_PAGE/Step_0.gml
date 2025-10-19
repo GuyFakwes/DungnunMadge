@@ -15,4 +15,4 @@ var l5BE0C9E7_0;l5BE0C9E7_0 = keyboard_check(vk_anykey);if (l5BE0C9E7_0){	//
 	/// @DnDParent : 5BE0C9E7
 	/// @DnDArgument : "room" "Room1"
 	/// @DnDSaveInfo : "room" "Room1"
-	room_goto(Room1);}
+	room_goto(Room001);}

@@ -1,11 +1,9 @@
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 44643E3D
-/// @DnDInput : 2
 /// @DnDArgument : "value" "1"
 /// @DnDArgument : "var" "gameispaused"
 global.gameispaused = 1;
-global.variable = 0;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
